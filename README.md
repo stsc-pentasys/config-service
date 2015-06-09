@@ -1,2 +1,2 @@
 # config-service
-Microservices Workshop:Example Spring Cloud Config Server
+Microservices Workshop: Example Spring Cloud Config Server
