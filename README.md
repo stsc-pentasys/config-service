@@ -5,17 +5,6 @@ Due to a bug in version *1.0.1.RELEASE* of `spring-cloud-config-server` it is ne
 against a snapshot version until *1.0.2.RELEASE* is available (see property `spring.cloud.version` in *pom.xml*).
 Simply create a runnable artifact *target/configservice-0.0.1-SNAPSHOT.jar* with `mvn install`.
 
-## Install root certificate
-The central GiT-Service *sot-vgit-01p.int.diraba.de* is secured using a self-signed certificate. Spring Cloud Config
-blocks access to sites with unknown root certificates at the top of the certificate chain. Therefore the certificate
-issued by DAB Ops must be installed in your local JVMs keystore. Just follow these steps:
-1. Locate the folder *libs/security* in the JVM installation used to run *configserver*.
-2. Copy *src/test/resources/sysinfraca2.cer* to *libs/security*.
-3. Import the root certificate into the *cacerts* keystore:
-`keytool -import -alias sysinfraca2  -keystore cacerts -file sysinfraca2.cer`
-4. On prompt choose a new password for the keystore
-5. Enter 'Yes'/'Ja'.
-
 ## Configuration
 You may change the default ports (9090/9091) and the location of the local repository basedir
 by providing a *application.yml* (or *application.properties*) in the services installation directory.
