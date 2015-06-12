@@ -7,15 +7,13 @@ spring:
     config:
       server:
         git:
-          uri: https://sot-vgit-01p.int.diraba.de/git/portal/iam/configurations.git
-          username: ${git.username}
-          password: ${git.password}
+          uri: https://github.com/stsc-pentasys/configurations
           basedir: target/config
         health:
           repositories:
             sessionmanager:
               label: master
-              profiles: production
+              profiles: development
           enabled: true
 
 endpoints:
