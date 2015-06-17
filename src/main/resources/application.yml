@@ -6,12 +6,12 @@ security:
   user:
     name: admin
     password: adminadmin
+# TODO Add property spring.cloud.config.server.git.url
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/stsc-pentasys/configurations
           basedir: target/config
         health:
           repositories:

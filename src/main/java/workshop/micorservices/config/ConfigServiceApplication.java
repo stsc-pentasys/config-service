@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 /**
  * Main entry point of <i>configservice</i> application.
  */
+// TODO Configure as Spring Boot application & enable config server
 public class ConfigServiceApplication {
 
     public static void main(String[] args) {
