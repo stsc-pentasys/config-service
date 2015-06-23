@@ -3,19 +3,6 @@ server:
 management:
   port: 9091
 # TODO 2: Add property spring.cloud.config.server.git.url
-spring:
-  cloud:
-    config:
-      server:
-        git:
-          basedir: target/config
-        health:
-          repositories:
-            sessionmanager:
-              label: master
-              profiles: development
-          enabled: true
-
 endpoints:
   metrics:
     sensitive: false
