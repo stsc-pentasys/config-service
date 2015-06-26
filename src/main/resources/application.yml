@@ -2,11 +2,7 @@ server:
   port: 9090
 management:
   port: 9091
-security:
-  user:
-    name: admin
-    password: adminadmin
-# TODO Add property spring.cloud.config.server.git.url
+# TODO 2: Add property spring.cloud.config.server.git.url
 spring:
   cloud:
     config:
@@ -31,3 +27,4 @@ logging:
       springframework:
         cloud:
           config: DEBUG
+# TODO 4: Add security configuration
