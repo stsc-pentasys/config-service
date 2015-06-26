@@ -20,7 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <start-class>workshop.micorservices.config.ConfigServiceApplication</start-class>
         <java.version>1.8</java.version>
-        <spring.config.version>1.0.2.BUILD-SNAPSHOT</spring.config.version>
+        <spring.config.version>1.0.2.RELEASE</spring.config.version>
     </properties>
 
     <dependencies>
@@ -71,19 +71,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <repositories>
-        <repository>
-            <id>springSnapshots</id>
-            <name>Spring Snapshots</name>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>daily</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </snapshots>
-            <url>https://repo.spring.io/snapshot</url>
-            <layout>default</layout>
-        </repository>
-    </repositories>
 
 </project>
